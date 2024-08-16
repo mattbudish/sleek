@@ -1,0 +1,75 @@
+{
+    "name": "sleek",
+    "registry": "sleek-main",
+    "desc": "Sleek Build System -- build projects without build files",
+    "license": "MIT",
+    "homepage": "https://gogs.oak.initsw.dev/mtb/sleek",
+    "versions": {
+        "stable": "0.1.0",
+        "head": "HEAD",
+        "package": true
+    },
+    "source": {
+        "stable": {
+            "url": "https://gogs.oak.initsw.dev/mtb/sleek/archive/0.1.0.tar.gz",
+            "checksum": "7f52f3efc2ed3c37e6152f746e4294bdff19085fb49a10b1886f6dcb2b3565ce"
+        },
+        "head": {
+            "url": "https://gogs.oak.initsw.dev/mtb/sleek.git",
+            "branch": null
+        }
+    },
+    "package": {
+        "stable": {
+            "files": {
+                "x86_64_linux": {
+                    "url": "https://gogs.oak.initsw.dev/attachments/95cf7e6e-5b67-44c3-93ba-63e2f3e97489",
+                    "sha256": "09ef6943d95cd10f2322f03cb45f71c953ecb8aa77c29786c9a3cd8a04eb3c50"
+                }
+            }
+        }
+    },
+    "build_dependencies": [
+        "argparse",
+        "flex"
+    ],
+    "dependencies": [
+        "libarchive",
+        "libcurl",
+        "libfl"
+    ],
+    "installed": [
+        {
+            "version": "0.1.0",
+            "installed_from_package": true,
+            "packages_built": false,
+            "time": 1682890586,
+            "runtime_dependencies": [
+                {
+                    "full_name": "libcurl",
+                    "version": "7.68.0",
+                    "declared_directly": true
+                },
+                {
+                    "full_name": "libarchive",
+                    "version": "3.6.2",
+                    "declared_directly": true
+                },
+                {
+                    "full_name": "libfl",
+                    "version": "2.6.4",
+                    "declared_directly": true
+                }
+            ],
+            "installed_as_dependency": false
+        }
+    ],
+    "build_commands": [
+        [ "make" ],
+        [ "build/sleek install" ]
+    ],
+    "headers_provided": [],
+    "cflags": [],
+    "libs": [],
+    "libsPrivate": []
+}
